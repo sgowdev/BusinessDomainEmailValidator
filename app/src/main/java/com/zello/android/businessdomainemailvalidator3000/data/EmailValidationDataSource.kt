@@ -1,9 +1,6 @@
 package com.zello.android.businessdomainemailvalidator3000.data
 
 import com.github.kittinunf.fuel.Fuel
-import com.github.kittinunf.fuel.core.ResponseDeserializable
-import com.github.kittinunf.fuel.core.awaitResponse
-import com.github.kittinunf.fuel.core.awaitResult
 import com.google.gson.Gson
 import com.zello.android.businessdomainemailvalidator3000.data.model.EmailValidationResponse
 
@@ -23,9 +20,4 @@ class EmailValidationDataSource {
             Result.Error(error)
         }
     }
-}
-
-object MyDeserializer : ResponseDeserializable<EmailValidationResponse> {
-    override fun deserialize(content: String): EmailValidationResponse =
-        Gson().fromJson(content, EmailValidationResponse::class.java)
 }
