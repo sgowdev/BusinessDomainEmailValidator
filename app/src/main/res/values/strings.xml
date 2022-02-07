@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BusinessDomainEmailValidator</string>
+    <string name="prompt_email">Email</string>
+    <string name="action_submit">Submit</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="email_invalid">Email Invalid</string>
+    <string name="is_business_domain">Is Business Domain:</string>
+</resources>
